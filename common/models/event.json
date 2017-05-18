@@ -1,0 +1,44 @@
+{
+  "name": "event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "participant": {
+      "type": "embedsMany",
+      "model": "participant",
+      "property": "participants",
+      "options": {
+        "validate"  : true,
+        "persistent": true,
+        "forceId"   : false
+      }
+    },
+    "participant_categories": {
+      "type": "embedsMany",
+      "model": "participantCategory",
+      "options": {
+        "validate"  : true,
+        "persistent": true,
+        "forceId"   : false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

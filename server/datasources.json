@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "192.168.100.4",
+    "port": 27017,
+    "database": "pmievents",
+    "password": "development",
+    "name": "mongodb",
+    "user": "development",
+    "connector": "mongodb"
+  }
+}

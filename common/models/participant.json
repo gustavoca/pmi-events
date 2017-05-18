@@ -1,0 +1,41 @@
+{
+  "name": "participant",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "names": {
+      "type": "string",
+      "required": true
+    },
+    "firstSurname": {
+      "type": "string",
+      "required": true
+    },
+    "lastSurname": {
+      "type": "string",
+      "required": true
+    },
+    "registeredAt": {
+      "type": "date",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
