@@ -19,8 +19,7 @@
       "required": true
     },
     "registeredAt": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "phone": {
       "type": "string",
@@ -35,7 +34,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "category": {
+      "type": "belongsTo",
+      "model": "participantCategory",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

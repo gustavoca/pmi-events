@@ -41,11 +41,11 @@
     "public": true
   },
   "participantCategory": {
-    "dataSource": "mongodb",
-    "public": true
+    "dataSource": "transient",
+    "public": false
   },
   "participant": {
-    "dataSource": "mongodb",
-    "public": true
+    "dataSource": "transient",
+    "public": false
   }
 }

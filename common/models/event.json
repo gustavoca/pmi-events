@@ -24,18 +24,18 @@
       "model": "participant",
       "property": "participants",
       "options": {
-        "validate"  : true,
+        "validate": false,
         "persistent": true,
-        "forceId"   : false
+        "forceId": false
       }
     },
     "participant_categories": {
       "type": "embedsMany",
       "model": "participantCategory",
       "options": {
-        "validate"  : true,
+        "validate": false,
         "persistent": true,
-        "forceId"   : false
+        "forceId": false
       }
     }
   },
