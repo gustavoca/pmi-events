@@ -29,6 +29,10 @@
       "type": "string",
       "required": true
     },
+    "qrCode": {
+      "type": "string",
+      "required": false
+    },
     "createdAt": {
       "type": "date"
     }
@@ -39,6 +43,20 @@
       "type": "belongsTo",
       "model": "participantCategory",
       "foreignKey": ""
+    },
+    "payMethod": {
+      "type": "belongsTo",
+      "model": "payMethod",
+      "foreignKey": ""
+    },
+    "payments": {
+      "type": "embedsMany",
+      "model": "payment",
+      "options": {
+        "validate": false,
+        "persistent": true,
+        "forceId": false
+      }
     }
   },
   "acls": [],

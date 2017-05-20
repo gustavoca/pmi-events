@@ -19,7 +19,7 @@
   },
   "validations": [],
   "relations": {
-    "participant": {
+    "participants": {
       "type": "embedsMany",
       "model": "participant",
       "property": "participants",
@@ -32,6 +32,15 @@
     "participant_categories": {
       "type": "embedsMany",
       "model": "participantCategory",
+      "options": {
+        "validate": false,
+        "persistent": true,
+        "forceId": false
+      }
+    },
+    "pay_methods": {
+      "type": "embedsMany",
+      "model": "payMethod",
       "options": {
         "validate": false,
         "persistent": true,
