@@ -22,7 +22,7 @@ module.exports = function(app) {
       var Event = app.models.Event;
       Event.create([
         // {name: 'event1', description: 'event1', payMethods: createPayMethods(), participantCategories: createParticipantCategories(), _participants: createParticipants(), createdAt: new Date()}
-        {name: 'event1', description: 'event1', payMethods: createPayMethods(), participantCategories: createParticipantCategories(), _participants: createParticipants(), createdAt: new Date()}
+        {name: 'event1',preSalePercentage: 20, description: 'event1', participantCategories: createParticipantCategories(), _participants: createParticipants(), createdAt: new Date()}
       ], cb);
     });
   }

@@ -13,6 +13,9 @@
     "description": {
       "type": "string"
     },
+    "preSalePercentage": {
+      "type": "number"
+    },
     "createdAt": {
       "type": "date"
     }
@@ -32,15 +35,6 @@
     "participant_categories": {
       "type": "embedsMany",
       "model": "participantCategory",
-      "options": {
-        "validate": false,
-        "persistent": true,
-        "forceId": false
-      }
-    },
-    "pay_methods": {
-      "type": "embedsMany",
-      "model": "payMethod",
       "options": {
         "validate": false,
         "persistent": true,

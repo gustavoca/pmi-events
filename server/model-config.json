@@ -48,10 +48,6 @@
     "dataSource": "transient",
     "public": false
   },
-  "payMethod": {
-    "dataSource": "transient",
-    "public": false
-  },
   "payment": {
     "dataSource": "transient",
     "public": false
