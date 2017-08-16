@@ -44,11 +44,6 @@
       "model": "participantCategory",
       "foreignKey": ""
     },
-    "payMethod": {
-      "type": "belongsTo",
-      "model": "payMethod",
-      "foreignKey": ""
-    },
     "payments": {
       "type": "embedsMany",
       "model": "payment",

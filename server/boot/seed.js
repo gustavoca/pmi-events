@@ -2,6 +2,7 @@ var async = require('async');
 var mongoDatasourceName = 'mongodb';
 
 module.exports = function(app) {
+  console.log("asdfsa");
   //data source
   var mongoDs = app.dataSources[mongoDatasourceName];
   //create all models
