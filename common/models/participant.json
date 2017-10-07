@@ -29,8 +29,28 @@
       "type": "string",
       "required": true
     },
+    "socialReason": {
+      "type": "string",
+      "required": false
+    },
+    "note": {
+      "type": "string",
+      "required": false
+    },
+    "modality": {
+      "type": "string",
+      "required": false
+    },
+    "nit": {
+      "type": "number",
+      "required": false
+    },
     "qrCode": {
       "type": "string",
+      "required": false
+    },
+    "attended": {
+      "type": "Boolean",
       "required": false
     },
     "createdAt": {

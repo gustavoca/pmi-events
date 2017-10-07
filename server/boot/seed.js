@@ -2,7 +2,6 @@ var async = require('async');
 var mongoDatasourceName = 'mongodb';
 
 module.exports = function(app) {
-  console.log("asdfsa");
   //data source
   var mongoDs = app.dataSources[mongoDatasourceName];
   //create all models
@@ -36,9 +35,9 @@ module.exports = function(app) {
   }
   //create participants
   function createParticipants() {
-    return [{names: "user1",firstSurname: "user1",lastSurname: "user1",registeredAt: new Date(), _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1"},
-            {names: "user2",firstSurname: "user2",lastSurname: "user2",registeredAt: new Date(),phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2"},
-            {names: "user3",firstSurname: "user3",lastSurname: "user3",registeredAt: new Date(),phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3"}
+    return [{names: "user1",firstSurname: "user1",lastSurname: "user1",registeredAt: new Date(), _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false},
+            {names: "user2",firstSurname: "user2",lastSurname: "user2",registeredAt: new Date(),phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false},
+            {names: "user3",firstSurname: "user3",lastSurname: "user3",registeredAt: new Date(),phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false}
             ];
   }
   //create payMethods
@@ -50,6 +49,7 @@ module.exports = function(app) {
 
   //create payments
   function createPayment() {
-    return [{amount: 100, id: "1"}];
+    return [{amount: 100, id: "1", createdAt: new Date()},
+            {amount: 50, id: "2", createdAt: new Date()}];
   }
 };

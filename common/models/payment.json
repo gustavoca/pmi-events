@@ -6,8 +6,8 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "amount": "number",
+    "amount": {
+      "type": "number",
       "required": true
     },
     "createdAt": {
