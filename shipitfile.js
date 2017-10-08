@@ -1,11 +1,9 @@
 module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
-  require('shipit-npm')(shipit);
-  require('./tasks/fs_set_ip')(shipit);
-  require('./tasks/restart')(shipit);
-  require('./tasks/deploy-check')(shipit);
-  require('./tasks/run-tests-remote')(shipit);
-  require('./tasks/fs-check')(shipit);
+  require('./shipit-tasks/install-dependencies')(shipit);
+  require('./shipit-tasks/restart')(shipit);
+  require('./shipit-tasks/shared')(shipit);
+  require('./shipit-tasks/init')(shipit);
 
   var packageFile = require('./package.json');
 
