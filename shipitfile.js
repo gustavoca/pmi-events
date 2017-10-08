@@ -14,7 +14,7 @@ module.exports = function (shipit) {
     default: {
       workspace: `/tmp/${app}`,
       deployTo: `/home/${deployUser}/apps/${app}`,
-      repositoryUrl: 'git@github.com:nobelbiz/filter_engine.git',
+      repositoryUrl: 'git@github.com:gustavoca/pmi-events.git',
       ignores: ['.git', 'node_modules', '.sync-config.cson'],
       keepReleases: 5,
       shallowClone: true,
