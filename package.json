@@ -24,11 +24,17 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
-    "nsp": "^2.1.0"
+    "nsp": "^2.1.0",
+    "shipit-cli": "^2.0.0",
+    "shipit-deploy": "^2.4.0"
   },
   "repository": {
     "type": "",
     "url": ""
+  },
+  "scripts": {
+    "start": "pm2 start config/pm2.json",
+  "stop": "pm2 stop config/pm2.json && pm2 delete config/pm2.json"
   },
   "license": "UNLICENSED",
   "description": "pmi-events"
