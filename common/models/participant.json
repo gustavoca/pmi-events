@@ -16,7 +16,7 @@
     },
     "lastSurname": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "registeredAt": {
       "type": "date"
