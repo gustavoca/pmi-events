@@ -13,6 +13,10 @@
     "price": {
       "type": "number",
       "required": true
+    },
+    "presalePrice": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

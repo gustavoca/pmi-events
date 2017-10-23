@@ -13,9 +13,6 @@
     "description": {
       "type": "string"
     },
-    "preSalePercentage": {
-      "type": "number"
-    },
     "createdAt": {
       "type": "date"
     }

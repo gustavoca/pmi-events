@@ -24,22 +24,22 @@ module.exports = function(app) {
         var Event = app.models.Event;
         Event.create([
           // {name: 'event1', description: 'event1', payMethods: createPayMethods(), participantCategories: createParticipantCategories(), _participants: createParticipants(), createdAt: new Date()}
-          {name: 'event1',preSalePercentage: 20, description: 'event1', participantCategories: createParticipantCategories(), _participants: createParticipants(), createdAt: new Date()}
+          {name: 'event1', description: 'event1', participantCategories: createParticipantCategories(), _participants: createParticipants(), createdAt: new Date()}
         ], cb);
       });
     }
     //create participant categories
     function createParticipantCategories() {
-      return [{name: 'cat1', price: 520.4, id: "1"},
-              {name: 'cat2', price: 90099.4, id: "2"},
-              {name: 'cat3', price: 12312.5, id: "3"},
-              {name: 'cat4', price: 11250.3, id: "4"}];
+      return [{name: 'cat1', price: 520.4,  presalePrice: 100, id: "1"},
+              {name: 'cat2', price: 90099.4,presalePrice: 200, id: "2"},
+              {name: 'cat3', price: 12312.5,presalePrice: 300, id: "3"},
+              {name: 'cat4', price: 11250.3,presalePrice: 400, id: "4"}];
     }
     //create participants
     function createParticipants() {
-      return [{names: "user1",firstSurname: "user1",lastSurname: "user1",registeredAt: new Date(), _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false},
-              {names: "user2",firstSurname: "user2",lastSurname: "user2",registeredAt: new Date(),phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false},
-              {names: "user3",firstSurname: "user3",lastSurname: "user3",registeredAt: new Date(),phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false}
+      return [{names: "user1",firstSurname: "user1",lastSurname: "user1",registeredAt: new Date(), lunch: true, _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false},
+              {names: "user2",firstSurname: "user2",lastSurname: "user2",registeredAt: new Date(), lunch: false,phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false},
+              {names: "user3",firstSurname: "user3",lastSurname: "user3",registeredAt: new Date(), lunch: true,phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false}
               ];
     }
     //create payMethods
