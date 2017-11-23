@@ -37,9 +37,9 @@ module.exports = function(app) {
     }
     //create participants
     function createParticipants() {
-      return [{names: "user1",firstSurname: "user1",lastSurname: "user1",registeredAt: new Date(), lunch: true, _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false},
-              {names: "user2",firstSurname: "user2",lastSurname: "user2",registeredAt: new Date(), lunch: false,phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false},
-              {names: "user3",firstSurname: "user3",lastSurname: "user3",registeredAt: new Date(), lunch: true,phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false}
+      return [{names: "Gustavo",firstSurname: "Calderon",lastSurname: "Añez",registeredAt: new Date(), lunch: true, _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false},
+              {names: "Francisco",firstSurname: "Suarez",lastSurname: "wwww",registeredAt: new Date(), lunch: false,phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false},
+              {names: "zzzz",firstSurname: "yyyy",lastSurname: "qqq",registeredAt: new Date(), lunch: true,phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false}
               ];
     }
     //create payMethods
