@@ -6,9 +6,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "lint": "eslint .",
-    "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "start": "pm2 start config/pm2.json",
+    "stop": "pm2 stop config/pm2.json && pm2 delete config/pm2.json"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -31,10 +30,6 @@
   "repository": {
     "type": "",
     "url": ""
-  },
-  "scripts": {
-    "start": "pm2 start config/pm2.json",
-  "stop": "pm2 stop config/pm2.json && pm2 delete config/pm2.json"
   },
   "license": "UNLICENSED",
   "description": "pmi-events"
