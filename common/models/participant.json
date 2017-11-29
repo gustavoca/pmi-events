@@ -57,6 +57,10 @@
       "type": "Boolean",
       "required": false
     },
+    "discount": {
+      "type": "number",
+      "required": false
+    },
     "createdAt": {
       "type": "date"
     }
