@@ -17,8 +17,8 @@ module.exports = (app) => {
     let email = "admin@admin.com";
     return User.find({where: {username: 'admin'}})
     .then((data) => {
-      if(data) console.log('> User "admin" already created');
-      if (!data) console.log(`> User "admin" with email ${email} will be created. Password: ${pass}`);
+      if(data._id) console.log('> User "admin" already created');
+      if(!data._id) console.log(`> User "admin" with email ${email} will be created. Password: ${pass}`);
       return User.findOrCreate({where: {username: 'admin'}},
       {
         username: 'admin',
