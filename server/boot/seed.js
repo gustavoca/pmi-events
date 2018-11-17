@@ -37,9 +37,9 @@ module.exports = function(app) {
     }
     //create participants
     function createParticipants() {
-      return [{names: "Gustavo",firstSurname: "Calderon",lastSurname: "Añez",registeredAt: new Date(), lunch: true, _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false},
-              {names: "Francisco",firstSurname: "Suarez",lastSurname: "wwww",registeredAt: new Date(), lunch: false,phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false},
-              {names: "zzzz",firstSurname: "yyyy",lastSurname: "qqq",registeredAt: new Date(), lunch: true,phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false}
+      return [{names: "Gustavo",firstSurname: "Calderon",lastSurname: "Añez",registeredAt: new Date(), lunch: true, _payments: createPayment(),phone: "12345790",email: "user1@gmail.com","createdAt": new Date(),id: "1",categoryId: "1", modality: "Venta", attended: false, paymentType: "Corporativo"},
+              {names: "Francisco",firstSurname: "Suarez",lastSurname: "wwww",registeredAt: new Date(), lunch: false,phone: "12345790",email: "user2@gmail.com",createdAt: new Date(),id: "2",categoryId: "2", modality: "Venta", attended: false, paymentType: "Corporativo"},
+              {names: "zzzz",firstSurname: "yyyy",lastSurname: "qqq",registeredAt: new Date(), lunch: true,phone: "12345790",email: "user3@gmail.com",createdAt: new Date(),id: "3",categoryId: "3", modality: "Pre-venta", attended: false, paymentType: "Individual"}
               ];
     }
     //create payMethods

@@ -57,6 +57,10 @@
       "type": "Boolean",
       "required": false
     },
+    "paymentType": {
+      "type": "string",
+      "required": true
+    },
     "discount": {
       "type": "number",
       "required": false
